@@ -1,0 +1,32 @@
+# This file will automatically update with entries for new content after a build and reload.
+
+Items: {
+	BasicSword: {
+		DisplayName: Basic Sword
+		Tooltip:
+			'''
+			Template of an item
+			Replacing this tooltip is duty 
+			It's snowing on Mt.Fuji
+			'''
+	}
+
+	TutorialItem: {
+		DisplayName: TutorialItem
+		Tooltip: Byron whatever this is...
+	}
+
+	PiggySummonStaff: {
+		DisplayName: Piggy Summon Staff
+		Tooltip: ""
+	}
+}
+
+Buffs: {
+	PiggyMinionBuff: {
+		DisplayName: Piggy Minion Buff
+		Description: Mods.MyFirstMod.Buffs.PiggyMinionBuff.Description
+	}
+}
+
+Projectiles.PiggyMinion.DisplayName: Piggy Minion
