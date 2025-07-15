@@ -8,7 +8,7 @@ using Terraria.ModLoader;
 
 namespace MyFirstMod.Content.Items.Weapons
 {
-    public class PiggySummonStaff : ModItem
+    public class TemplateSummonStaff : ModItem
     {
         public override void SetStaticDefaults()
         {
@@ -33,8 +33,8 @@ namespace MyFirstMod.Content.Items.Weapons
 
             Item.value = Item.buyPrice(gold: 999);
 
-            Item.shoot = ModContent.ProjectileType<PiggyMinion>();
-            Item.buffType = ModContent.BuffType<PiggyMinionBuff>();
+            Item.shoot = ModContent.ProjectileType<TemplateMinion>();
+            Item.buffType = ModContent.BuffType<TemplateMinionBuff>();
         }
 
         public override void ModifyShootStats(Player player, ref Vector2 position, ref Vector2 velocity, ref int type, ref int damage, ref float knockback)

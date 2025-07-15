@@ -9,8 +9,5 @@
 	</PropertyGroup>
 
 	<!-- References -->
-	<ItemGroup>
-	  <Folder Include="Content\NPCs\" />
-	</ItemGroup>
 
 </Project>

@@ -11,7 +11,7 @@ using Terraria.ModLoader;
 
 namespace MyFirstMod.Content.Projectiles
 {
-    internal class PiggyMinion : ModProjectile
+    internal class TemplateMinion : ModProjectile
     {
         public override void SetStaticDefaults()
         {
@@ -56,11 +56,11 @@ namespace MyFirstMod.Content.Projectiles
 
             if (owner.dead || !owner.active)
             {
-                owner.ClearBuff(ModContent.BuffType<PiggyMinionBuff>());
+                owner.ClearBuff(ModContent.BuffType<TemplateMinionBuff>());
                 return;
             }
 
-            if (owner.HasBuff(ModContent.BuffType<PiggyMinionBuff>()))
+            if (owner.HasBuff(ModContent.BuffType<TemplateMinionBuff>()))
             {
                 // Will despawn after two seconds when minion is deselected
                 Projectile.timeLeft = 2;

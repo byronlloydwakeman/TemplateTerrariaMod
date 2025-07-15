@@ -9,7 +9,7 @@ using Terraria.ModLoader;
 
 namespace MyFirstMod.Content.Buffs
 {
-    internal class PiggyMinionBuff : ModBuff
+    internal class TemplateMinionBuff : ModBuff
     {
         public override void SetStaticDefaults()
         {
@@ -20,7 +20,7 @@ namespace MyFirstMod.Content.Buffs
         public override void Update(Player player, ref int buffIndex)
         {
             // If the player has the minion already selected
-            if (player.ownedProjectileCounts[ModContent.ProjectileType<PiggyMinion>()] > 0)
+            if (player.ownedProjectileCounts[ModContent.ProjectileType<TemplateMinion>()] > 0)
             {
                 player.buffTime[buffIndex] = 18000;
                 return;
